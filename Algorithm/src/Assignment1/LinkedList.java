@@ -23,7 +23,7 @@ public class LinkedList {
 		node.next=new ListNode(val);*/
 		
 		
-		//insert form the head
+		//insert from the head
 		node=dummy;
 		while(node.next!=null){
 			if(find(val))
