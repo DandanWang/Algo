@@ -17,7 +17,7 @@ public class LinkedList {
 	/*	node=dummy;
 		while(node.next!=null){
 			if(node.next.val==val)
-				break;
+				;
 			node=node.next;
 		}
 		node.next=new ListNode(val);*/
@@ -27,7 +27,7 @@ public class LinkedList {
 		node=dummy;
 		while(node.next!=null){
 			if(find(val))
-				break;
+				;
 			new ListNode(val).next=node;
 			node=new ListNode(val);
 			
