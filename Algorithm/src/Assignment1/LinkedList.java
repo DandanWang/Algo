@@ -28,8 +28,9 @@ public class LinkedList {
 		while(node.next!=null){
 			if(find(val))
 				;
-			new ListNode(val).next=node;
-			node=new ListNode(val);
+			ListNode newNode=new ListNode(val);
+			newNode.next=node.next;
+			node.next=newNode;
 			
 		}
 		node=new ListNode(val);
